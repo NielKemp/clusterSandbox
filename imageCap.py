@@ -2,8 +2,8 @@ import numpy as np #import numpy cause images are matrices..
 import cv2 #importing CV library, add with pip install opencv-python
 
 
-#cap = cv2.VideoCapture(0) #initialize videocapture object, 0 is webcam?!?!
-cap = cv2.VideoCapture(2) #initialize videocapture object, 0 is webcam?!?!
+cap = cv2.VideoCapture(0) #initialize videocapture object, 0 is webcam on laptop?!?!
+#cap = cv2.VideoCapture(2) #initialize videocapture object, 2 is external webcam?!?!
 #cap.set(cv2.CAP_PROP_FRAME_WIDTH,2000)
 #cap.set(cv2.CAP_PROP_FRAME_HEIGHT,2000)
 
@@ -11,8 +11,7 @@ currentWidth = cap.get(3)
 currentHeight = cap.get(4)
 
 imageCount = 0
-savePath = 'C:/Users/Niel/Kaggle/gestureRecognition/data/'
-imageMainName = 'gestureUp'
+imageMainName = 'imgData'
 
 
 while(True):
